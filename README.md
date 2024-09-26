@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# 💰 CryptoFlow - Cryptocurrency Price Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview 📈
 
-Currently, two official plugins are available:
+CryptoFlow is a responsive and interactive web application designed to provide real-time cryptocurrency prices. It connects to a cryptocurrency API to fetch live data, allowing users to view the highest and lowest prices of the day, as well as other essential market information for various digital currencies. With a sleek and modern interface, it offers a seamless user experience for crypto enthusiasts and traders alike.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used 🛠️
 
-## Expanding the ESLint configuration
+This project leverages a modern tech stack to ensure high performance, scalability, and an engaging user experience:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **ReactJS**: For building a dynamic and responsive user interface.
+- **TypeScript (TS)**: Adds type safety and enhances code reliability.
+- **Vite**: For fast development and optimized build processes.
+- **CSS**: Utilized for styling components and creating a visually appealing layout.
+- **Zustand**: State management for efficient data handling and global state control.
+- **Zod**: Schema validation to ensure data integrity and security from API responses.
+- **Spinkit**: Provides elegant loading animations, enhancing the user experience during data fetching.
+- **Axios**: Simplifies HTTP requests to fetch data from the cryptocurrency API.
 
-- Configure the top-level `parserOptions` property like this:
+## Key Features 🌟
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Real-time Price Updates**: Get the latest cryptocurrency prices with dynamic updates.
+- **Daily High & Low Prices**: View the highest and lowest prices of the day for each cryptocurrency.
+- **Data Validation**: Uses Zod to validate API responses, ensuring accurate and reliable data.
+- **Smooth Loading Animations**: Enhanced user experience with stylish loaders during data fetches.
+
+## 🚀 Live Demo
+
+Check out the live version [here](https://66f5a605576d5e20703bb3c4--radiant-salamander-2fe2e0.netlify.app/).
+
+## Getting Started 🚀
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/milagrosniro/criptoFlow
+
+   ## 🧑‍💻 Installation & Setup
+
+**Install Dependencies:**
+
+```bash
+npm install
 ```
+**Start the Project:**
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+```bash
+npm run dev
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
 ```
+## 📋 Available Scripts
+```bash
+npm run dev: Starts the development server.
+npm run build: Builds the project for production.
+npm run lint: Runs ESLint to analyze the code.
+
+ ```
+
+## 📝 License
+This project is licensed under the MIT License.
