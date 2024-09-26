@@ -8,7 +8,8 @@ export type CryptoPrice = z.infer<typeof CryptoPriceSchema>
 
 export interface IState{
     cryptocurrencies : CryptoCurrency[],
-    cryptoSelected: CryptoPrice;
+    cryptoSelected: CryptoPrice,
+    loading: boolean,
     fetchCryptos: () =>Promise<void>,
     fetchData: (pair: IPairState) =>Promise<void>,
 }
